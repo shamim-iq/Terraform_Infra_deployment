@@ -32,7 +32,7 @@ resource "aws_security_group" "proj-Sg" {
   vpc_id = aws_vpc.proj-vpc.id
 
   ingress {
-    description = "HTTP from VPC"
+    description = "HTTP"
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
