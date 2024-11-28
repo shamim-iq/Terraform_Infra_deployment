@@ -1,6 +1,6 @@
 # Terraform AWS Infrastructure Deployment
 
-This repository contains the Terraform configuration files to create and deploy an AWS infrastructure. The setup includes a VPC, public subnets, EC2 instances, an Application Load Balancer (ALB), S3 bucket, IAM roles/policies, and user data to configure Apache2 with a custom webpage.
+This repository contains the Terraform configuration files to create and deploy an AWS infrastructure. The setup includes a VPC, public subnets, EC2 instances, an Application Load Balancer (ALB), an S3 bucket, IAM roles/policies, and user data to configure Apache2 with a custom webpage. The project uses **S3 as a remote backend** for storing the Terraform state and **DynamoDB for state locking**, ensuring consistency during deployments.
 
 ## Workflow Overview
 
