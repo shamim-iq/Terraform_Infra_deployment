@@ -71,6 +71,6 @@ This repository contains the Terraform configuration files to create and deploy 
      
 4. **Clean Up Resources**:
    - To destroy the infrastructure and avoid incurring additional costs-
-     ```bash
-     terraform destroy
-     ```
+   ```bash
+   terraform destroy
+   ```
