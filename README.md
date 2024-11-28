@@ -1,4 +1,3 @@
-# Terraform_Infra_deployment
 # Terraform AWS Infrastructure Deployment
 
 This repository contains the Terraform configuration files to create and deploy an AWS infrastructure. The setup includes a VPC, public subnets, EC2 instances, an Application Load Balancer (ALB), S3 bucket, IAM roles/policies, and user data to configure Apache2 with a custom webpage.
@@ -50,12 +49,28 @@ This repository contains the Terraform configuration files to create and deploy 
 
    ```bash
    terraform init
-3. **Initialize Terraform**:  
-   Review and Apply Configuration:
+   
+3. **Review and Apply Configuration**:  
+   
    - Check the execution plan-
    ```bash
    terraform plan
    ```
+   
    - Apply the configuration-
    ```bash
    terraform apply
+   ```
+3. **Access the Infrastructure**:  
+   
+   - Retrieve the public DNS of the ALB from the Terraform output-
+   ```bash
+   terraform output
+   ```
+   - Access your application via the ALB URL in a browser.
+     
+4. **Clean Up Resources**:
+   - To destroy the infrastructure and avoid incurring additional costs-
+     ```bash
+     terraform destroy
+     ```
