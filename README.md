@@ -2,11 +2,10 @@
 # Terraform AWS Infrastructure Deployment
 
 This repository contains the Terraform configuration files to create and deploy an AWS infrastructure. The setup includes a VPC, public subnets, EC2 instances, an Application Load Balancer (ALB), S3 bucket, IAM roles/policies, and user data to configure Apache2 with a custom webpage.
-![Diagram](./Diagram.JPG)
 
 ## Workflow Overview
 
-![Infrastructure Workflow](workflow-image.png)
+![Infrastructure Workflow](./Diagram.JPG)
 
 ## Features
 
@@ -46,3 +45,17 @@ This repository contains the Terraform configuration files to create and deploy 
    git clone https://github.com/shamim-iq/Terraform_aws_Infra_deployment.git
    cd Terraform_aws_Infra_deployment
 
+2. **Initialize Terraform**:  
+   Initialize the Terraform backend using the S3 bucket and DynamoDB table.
+
+   ```bash
+   terraform init
+3. **Initialize Terraform**:  
+   Review and Apply Configuration:
+   - Check the execution plan-
+   ```bash
+   terraform plan
+   ```
+   - Apply the configuration-
+   ```bash
+   terraform apply
