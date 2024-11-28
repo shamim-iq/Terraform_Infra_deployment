@@ -43,9 +43,10 @@ This repository contains the Terraform configuration files to create and deploy 
    ```bash
    git clone https://github.com/shamim-iq/Terraform_aws_Infra_deployment.git
    cd Terraform_aws_Infra_deployment
+   ```
 
 2. **Initialize Terraform**:  
-   Initialize the Terraform backend using the S3 bucket and DynamoDB table.
+   - Initialize the Terraform backend using the S3 bucket and DynamoDB table.
 
    ```bash
    terraform init
